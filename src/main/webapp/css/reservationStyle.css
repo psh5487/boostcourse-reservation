@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8ecef; 
+}
+
+a { 
+	text-decoration: none; 
+	color: black;
+}
+
+header {
+  	background-color: #04cf5d;
+	color: white;
+  	font-size: 20px;
+  	font-weight: bold;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-left: 10px;
+  	
+  	display: flex;
+	flex-direction: row;
+}
+
+header div {
+	margin-top: 7px;
+	margin-left: 7px;
+}
+
+.promotion {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 230px;
+	
+	overflow: hidden;
+}
+
+.promotionImg {
+	width: 250px;
+	filter: brightness(70%);
+	
+	/* float: left; */
+}
+
+.tabCategory {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-color: #e7e8eb;
+	border-style: solid;
+	border-width: thin;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.categoryBtn {
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+.categoryBtn:hover, .categoryBtn:active {
+	border-bottom: 3px solid #04cf5d;
+	cursor: pointer;
+}
+
+#counts div {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-color: #e7e8eb;
+	border-style: solid;
+	border-width: thin;
+	text-align: center;
+}
+
+.productList {
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+}
+
+.productList > div {
+	background-color: white;
+	border-color: #e7e8eb;
+	border-style: solid;
+	border-width: thin;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 20%;
+	max-width: 20%;
+}
+
+.lettersInProduct {
+	padding: 10px;
+}
+
+.productList img {
+	width: 100%;
+}
+
+/* Responsive layout - makes a two column */
+@media (max-width: 800px) {
+  .productList div {
+    width: 40%;
+    max-width: 40%;
+  }
+}
+
+/* Responsive layout - makes one column */
+@media (max-width: 600px) {
+  .productList div {
+  	width: 80%;
+    max-width: 80%;
+  }
+}
+
+.seeMore {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-color: #e7e8eb;
+	border-style: solid;
+	border-width: thin;
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.gotoTop {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+
+
+
